@@ -48,8 +48,8 @@ jobs:
         run: npm audit
 
   deploy:
-    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy on Production
       - uses: JorgeLNJunior/render-deploy@v1.4.5
