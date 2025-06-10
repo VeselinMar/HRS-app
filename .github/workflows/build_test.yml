@@ -45,7 +45,7 @@ jobs:
         run: npm audit fix --force
 
       - name: Run Security Audit
-        run: npm audit
+        run: npm audit --audit-level=high
 
   deploy:
     runs-on: ubuntu-latest
